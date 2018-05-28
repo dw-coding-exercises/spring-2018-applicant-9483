@@ -1,0 +1,69 @@
+{  :cached nil
+ , :request-time 486
+ , :repeatable? false
+ , :protocol-version {:name "HTTP", :major 1, :minor 1}
+ , :streaming? true
+ , :http-client #object[org.apache.http.impl.client.InternalHttpClient 0x40c7a51c "org.apache.http.impl.client.InternalHttpClient@40c7a51c"]
+ , :chunked? true
+ , :reason-phrase "OK"
+ , :headers {"X-Download-Options" "noopen", "X-Permitted-Cross-Domain-Policies" "none", "Server" "nginx/1.13.8", "Content-Type" "application/edn", "X-Content-Type-Options" "nosniff", "X-Frame-Options" "DENY", "Strict-Transport-Security" "max-age=15724800; includeSubDomains;", "Connection" "close", "Transfer-Encoding" "chunked", "Date" "Sat, 26 May 2018 22:34:01 GMT", "X-XSS-Protection" "1; mode=block", "Content-Security-Policy" "object-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'strict-dynamic' https: http:;"}
+ , :orig-content-encoding nil
+ , :status 200
+ , :length -1
+ , :body "({:district-divisions #{{:ocd-id \"ocd-division/country:us/state:ca\"
+ , :voter-registration-authority-level :county
+ , :election-authority-level :county
+ , :voting-methods #{{:primary true
+ , :instructions {:voting-id \"If you've voted in California before, you don't need to show ID. \\n\\nIf you're a first-time voter who registered by mail, and didn't include your driver's license number, California ID number, or the last 4 digits of your social security number on your registration, you may be asked to provide ID when you vote. Acceptable forms include: a current and valid photo ID; or a copy of a current utility bill, bank statement, government check, paycheck, or other government document that shows your name and address.\\n\\nVoters without ID: If you are unable to provide ID, you will be able to vote a provisional ballot.\"}
+ , :type :in-person
+ , :excuse-required false} {:primary false, :type :by-mail, :excuse-required false, :ballot-request-deadline-received #inst \"2018-05-29T00:00:00.000-00:00\"
+ , :acceptable-forms #{{:name :ca_absentee}}}}
+ , :voter-registration-methods #{{:instructions {:registration \"We encourage you to register to vote online. It's quick, simple, and easy. You should know: you need a state-issued ID and a social security number to register to vote online. If you don't have a state-issued ID, you can still register to vote by mail.\"}
+ , :type :online
+ , :supports-iframe false
+ , :url \"http://registertovote.ca.gov/\"} {:deadline-postmarked #inst \"2018-05-21T00:00:00.000-00:00\"
+ , :instructions {:signature \"To register in California you must: \\nbe a citizen of the United States \\nbe a resident of California \\nbe at least 18 years of age at the time of the next election \\nnot be imprisoned or on parole for the conviction of a felony \\nnot currently be judged mentally incompetent by a court of law \\nSignature is required. If you meet the requirements listed above, please sign and date the registration card in the space provided.\"
+
+ , :type :by-mail
+ , :acceptable-forms #{{:name :nvrf}}}}}}
+ , :website \"https://voterstatus.sos.ca.gov\"
+ , :polling-place-url \"https://voterstatus.sos.ca.gov\"
+ , :date #inst \"2018-06-05T00:00:00.000-00:00\"
+ , :population 38332521
+ , :polling-place-url-shortened \"http://tvote.org/2m2Vi4e\"
+ , :description \"California Primary Election\"
+ , :id #uuid \"5ade051e-2318-4834-b46c-16a34287efe6\"})"
+ , :trace-redirects []}
+
+clojure.edn/read-string on the body...
+clojure.edn$read_string@4be43234({:district-divisions #{{:ocd-id "ocd-division/country:us/state:ca", :voter-registration-authority-level :county, :election-authority-level :county, :voting-methods #{{:primary true, :instructions {:voting-id "If you've voted in California before, you don't need to show ID. \n\nIf you're a first-time voter who registered by mail, and didn't include your driver's license number, California ID number, or the last 4 digits of your social security number on your registration, you may be asked to provide ID when you vote. Acceptable forms include: a current and valid photo ID; or a copy of a current utility bill, bank statement, government check, paycheck, or other government document that shows your name and address.\n\nVoters without ID: If you are unable to provide ID, you will be able to vote a provisional ballot."}, :type :in-person, :excuse-required false} {:primary false, :type :by-mail, :excuse-required false, :ballot-request-deadline-received #inst "2018-05-29T00:00:00.000-00:00", :acceptable-forms #{{:name :ca_absentee}}}}, :voter-registration-methods #{{:instructions {:registration "We encourage you to register to vote online. It's quick, simple, and easy. You should know: you need a state-issued ID and a social security number to register to vote online. If you don't have a state-issued ID, you can still register to vote by mail."}, :type :online, :supports-iframe false, :url "http://registertovote.ca.gov/"} {:deadline-postmarked #inst "2018-05-21T00:00:00.000-00:00", :instructions {:signature "To register in California you must: \nbe a citizen of the United States \nbe a resident of California \nbe at least 18 years of age at the time of the next election \nnot be imprisoned or on parole for the conviction of a felony \nnot currently be judged mentally incompetent by a court of law \nSignature is required. If you meet the requirements listed above, please sign and date the registration card in the space provided.", :idnumber "When you register to vote, you must provide your California driver's license or California identification card number, if you have one. If you do not have a driver's license or ID card, you must provide the last four digits of your Social Security Number (SSN). If you do not include this information, you will be required to provide identification when you vote."}, :type :by-mail, :acceptable-forms #{{:name :nvrf}}}}}}, :website "https://voterstatus.sos.ca.gov", :polling-place-url "https://voterstatus.sos.ca.gov", :date #inst "2018-06-05T00:00:00.000-00:00", :population 38332521, :polling-place-url-shortened "http://tvote.org/2m2Vi4e", :description "California Primary Election", :id #uuid "5ade051e-2318-4834-b46c-16a34287efe6"})
+formatted with http://repo.tiye.me/mvc-works/edn-formatter/ ...
+
+({:district-divisions #{{:ocd-id "ocd-division/country:us/state:ca",
+                         :voter-registration-authority-level :county,
+                         :election-authority-level :county,
+                         :voting-methods #{{:primary true,
+                                            :instructions {:voting-id "If you've voted in California before, you don't need to show ID. \n\nIf you're a first-time voter who registered by mail, and didn't include your driver's license number, California ID number, or the last 4 digits of your social security number on your registration, you may be asked to provide ID when you vote. Acceptable forms include: a current and valid photo ID; or a copy of a current utility bill, bank statement, government check, paycheck, or other government document that shows your name and address.\n\nVoters without ID: If you are unable to provide ID, you will be able to vote a provisional ballot."},
+                                            :type :in-person,
+                                            :excuse-required false}
+                                           {:primary false,
+                                            :type :by-mail,
+                                            :excuse-required false,
+                                            :ballot-request-deadline-received #inst "2018-05-29T00:00:00.000-00:00",
+                                            :acceptable-forms #{{:name :ca_absentee}}}},
+                         :voter-registration-methods #{{:instructions {:registration "We encourage you to register to vote online. It's quick, simple, and easy. You should know: you need a state-issued ID and a social security number to register to vote online. If you don't have a state-issued ID, you can still register to vote by mail."},
+                                                        :type :online,
+                                                        :supports-iframe false,
+                                                        :url "http://registertovote.ca.gov/"}
+                                                       {:deadline-postmarked #inst "2018-05-21T00:00:00.000-00:00",
+                                                        :instructions {:signature "To register in California you must: \nbe a citizen of the United States \nbe a resident of California \nbe at least 18 years of age at the time of the next election \nnot be imprisoned or on parole for the conviction of a felony \nnot currently be judged mentally incompetent by a court of law \nSignature is required. If you meet the requirements listed above, please sign and date the registration card in the space provided.",
+                                                                       :idnumber "When you register to vote, you must provide your California driver's license or California identification card number, if you have one. If you do not have a driver's license or ID card, you must provide the last four digits of your Social Security Number (SSN). If you do not include this information, you will be required to provide identification when you vote."},
+                                                        :type :by-mail,
+                                                        :acceptable-forms #{{:name :nvrf}}}}}},
+  :website "https://voterstatus.sos.ca.gov",
+  :polling-place-url "https://voterstatus.sos.ca.gov",
+  :date #inst "2018-06-05T00:00:00.000-00:00",
+  :population 38332521,
+  :polling-place-url-shortened "http://tvote.org/2m2Vi4e",
+  :description "California Primary Election",
+  :id #uuid "5ade051e-2318-4834-b46c-16a34287efe6"})
